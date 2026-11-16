@@ -1,0 +1,11 @@
+PROJECT_NAME           = "Time to Think"
+PROJECT_NUMBER         = "0.1.0-beta"
+PROJECT_BRIEF          = "Software educacional que sirve como edTech enfocado a docentes y alumnos"
+
+OUTPUT_DIRECTORY       = docs/generated
+
+INPUT                  = src
+RECURSIVE              = YES
+
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO

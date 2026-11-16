@@ -1,0 +1,16 @@
+# CMake
+build/
+cmake-build-*/
+
+# Distribuciones locales
+releases/
+
+# Archivos temporales
+*.o
+*.a
+*.so
+*.dll
+*.exe
+
+# Configuración local de VS Code
+.vscode/

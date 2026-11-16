@@ -1,0 +1,3 @@
+/home/elchinomandaron/C-Proyects/timetothink/build/CMakeFiles/timetothink.dir
+/home/elchinomandaron/C-Proyects/timetothink/build/CMakeFiles/edit_cache.dir
+/home/elchinomandaron/C-Proyects/timetothink/build/CMakeFiles/rebuild_cache.dir
