@@ -18,7 +18,7 @@ void ConfigScreen::init() {
 
     backButton = new Button(
         0, 0, backButtonWidth, backButtonHeight, 
-        "regresar", Fade((Color){150, 150, 170, 255}, 0.5f),
+        "regresar", Fade(Color{150, 150, 170, 255}, 0.5f),
     [this]() {
          SM.changeScreen("main_menu");       
     });

@@ -27,7 +27,7 @@ private:
 
     float catalogButtonWidth = 200.0f;
     float catalogButtonHeight = 70.0f;
-    Color catalogButtonColor = (Color){83, 168, 152, 255};
+    Color catalogButtonColor = Color{83, 168, 152, 255};
 
     float catalogMenuWidth = 700.0f;
     float catalogMenuHeight = 300.0f;

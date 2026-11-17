@@ -17,7 +17,7 @@ void StartScreen::init() {
     float squareOneSize = 200.0f;
     float squareTwoWidth = 70.0f;
 
-    Color lessonColor = Fade((Color){70, 136, 170, 255}, 0.5f); 
+    Color lessonColor = Fade(Color{70, 136, 170, 255}, 0.5f); 
 
     addFrame = new Button(
         SM.getWidth(5.0f), SM.getHeight(95.0f), 150, 50,  
@@ -103,7 +103,7 @@ void StartScreen::init() {
     lesson->addFrame({
         LessonElement::Text{
             "Leccion: formula general \n tema: ecuaciones de segundo grado",
-            (Vector2){SM.getWidth(3.0f), SM.getHeight(3.0f)},
+            Vector2{SM.getWidth(3.0f), SM.getHeight(3.0f)},
             titleSize, WHITE
         },
         LessonElement::Image{
@@ -120,7 +120,7 @@ void StartScreen::init() {
             "             en la incognita de la ecuacion. \n \n"
             "Nuestro objetivo sera despejar x en esta forma general \n"
             "                    de la ecuacion",
-            (Vector2){SM.getWidth(29.0f), SM.getHeight(48.0f)},
+            Vector2{SM.getWidth(29.0f), SM.getHeight(48.0f)},
             textSize, WHITE
         },
 
@@ -130,19 +130,19 @@ void StartScreen::init() {
     lesson->addFrame({
         LessonElement::Text{
             "Leccion: formula general \n tema: ecuaciones de segundo grado",
-            (Vector2){SM.getWidth(3.0f), SM.getHeight(3.0f)},
+            Vector2{SM.getWidth(3.0f), SM.getHeight(3.0f)},
             titleSize, WHITE
         },
         LessonElement::Text{
             "       CUESTIONARIO \n"
             "como se define una ecuacion \n"
             "    de segundo grado?",
-            (Vector2){SM.getWidth(35.0f), SM.getHeight(20.0f)},
+            Vector2{SM.getWidth(35.0f), SM.getHeight(20.0f)},
             30.0f, WHITE
         },
         LessonElement::Text{
             this->ansewerOne,
-            (Vector2){SM.getWidth(30.0f), SM.getHeight(90.0f)},
+            Vector2{SM.getWidth(30.0f), SM.getHeight(90.0f)},
             titleSize, WHITE
         },
 
@@ -158,7 +158,7 @@ void StartScreen::init() {
     lesson->addFrame({
         LessonElement::Text{
             "Leccion: formula general \n tema: ecuaciones de segundo grado",
-            (Vector2){SM.getWidth(3.0f), SM.getHeight(3.0f)},
+            Vector2{SM.getWidth(3.0f), SM.getHeight(3.0f)},
             titleSize, WHITE
         },
         LessonElement::Image{
@@ -176,7 +176,7 @@ void StartScreen::init() {
             "Usamos esta igualdad matematica por conveniencia para \n"
             "poder despejar x, lo que nos lleva al siguiente paso \n \n"
             "              simplificando nos queda:",
-            (Vector2){SM.getWidth(29.0f), SM.getHeight(40.0f)},
+            Vector2{SM.getWidth(29.0f), SM.getHeight(40.0f)},
             textSize, WHITE
         },
         LessonElement::Image{
@@ -192,7 +192,7 @@ void StartScreen::init() {
     lesson->addFrame({
         LessonElement::Text{
             "Leccion: formula general \n ecuaciones de segundo grado",
-            (Vector2){SM.getWidth(0.0f), SM.getHeight(0.0f)},
+            Vector2{SM.getWidth(0.0f), SM.getHeight(0.0f)},
             titleSize, WHITE
         },
         LessonElement::Image{
@@ -207,40 +207,40 @@ void StartScreen::init() {
         },
         LessonElement::Square{
             SM.getWidth(squareOneWidth), SM.getHeight(squareOneHeight), 
-            squareOneSize, squareOneSize, (Color){145, 0, 0, 255}
+            squareOneSize, squareOneSize, Color{145, 0, 0, 255}
         },
         LessonElement::Square{
             SM.getWidth(squareOneWidth), SM.getHeight(squareOneHeight)+squareOneSize, 
-            squareOneSize, 180.0f, (Color){0, 41, 94, 255}
+            squareOneSize, 180.0f, Color{0, 41, 94, 255}
         },
         LessonElement::Line{
-            (Vector2){SM.getWidth(squareOneWidth), SM.getHeight(squareOneHeight)},
-            (Vector2){SM.getWidth(squareOneWidth), SM.getHeight(squareOneHeight) + squareOneSize+180},
+            Vector2{SM.getWidth(squareOneWidth), SM.getHeight(squareOneHeight)},
+            Vector2{SM.getWidth(squareOneWidth), SM.getHeight(squareOneHeight) + squareOneSize+180},
             WHITE, 2.0f
         },
         LessonElement::Line{
-            (Vector2){SM.getWidth(squareOneWidth), SM.getHeight(squareOneHeight)},
-            (Vector2){SM.getWidth(squareOneWidth) + squareOneSize, SM.getHeight(squareOneHeight)},
+            Vector2{SM.getWidth(squareOneWidth), SM.getHeight(squareOneHeight)},
+            Vector2{SM.getWidth(squareOneWidth) + squareOneSize, SM.getHeight(squareOneHeight)},
             WHITE, 2.0f
         },
         LessonElement::Line{
-            (Vector2){SM.getWidth(squareOneWidth) + squareOneSize, SM.getHeight(squareOneHeight)},
-            (Vector2){SM.getWidth(squareOneWidth) + squareOneSize, SM.getHeight(squareOneHeight) + squareOneSize+180},
+            Vector2{SM.getWidth(squareOneWidth) + squareOneSize, SM.getHeight(squareOneHeight)},
+            Vector2{SM.getWidth(squareOneWidth) + squareOneSize, SM.getHeight(squareOneHeight) + squareOneSize+180},
             WHITE, 2.0f
         },
         LessonElement::Line{
-            (Vector2){SM.getWidth(squareOneWidth), SM.getHeight(squareOneHeight) + squareOneSize+180},
-            (Vector2){SM.getWidth(squareOneWidth) + squareOneSize, SM.getHeight(squareOneHeight) + squareOneSize+180},
+            Vector2{SM.getWidth(squareOneWidth), SM.getHeight(squareOneHeight) + squareOneSize+180},
+            Vector2{SM.getWidth(squareOneWidth) + squareOneSize, SM.getHeight(squareOneHeight) + squareOneSize+180},
             WHITE, 2.0f
         },
         LessonElement::Line{
-            (Vector2){SM.getWidth(squareOneWidth), SM.getHeight(squareOneHeight) + squareOneSize},
-            (Vector2){SM.getWidth(squareOneWidth) + squareOneSize, SM.getHeight(squareOneHeight) + squareOneSize},
+            Vector2{SM.getWidth(squareOneWidth), SM.getHeight(squareOneHeight) + squareOneSize},
+            Vector2{SM.getWidth(squareOneWidth) + squareOneSize, SM.getHeight(squareOneHeight) + squareOneSize},
             WHITE, 2.0f
         },
         LessonElement::Line{
-            (Vector2){SM.getWidth(squareOneWidth), SM.getHeight(squareOneHeight) + squareOneSize+90},
-            (Vector2){SM.getWidth(squareOneWidth) + squareOneSize, SM.getHeight(squareOneHeight) + squareOneSize+90},
+            Vector2{SM.getWidth(squareOneWidth), SM.getHeight(squareOneHeight) + squareOneSize+90},
+            Vector2{SM.getWidth(squareOneWidth) + squareOneSize, SM.getHeight(squareOneHeight) + squareOneSize+90},
             WHITE, 2.0f
         },
         LessonElement::Image{
@@ -278,46 +278,46 @@ void StartScreen::init() {
 
         LessonElement::Square{
             SM.getWidth(squareTwoWidth), SM.getHeight(squareOneHeight), 
-            squareOneSize, squareOneSize, (Color){145, 0, 0, 255}
+            squareOneSize, squareOneSize, Color{145, 0, 0, 255}
         },
         LessonElement::Square{
             SM.getWidth(squareTwoWidth), SM.getHeight(squareOneHeight)+squareOneSize, 
-            squareOneSize, 90.0f, (Color){0, 41, 94, 255}
+            squareOneSize, 90.0f, Color{0, 41, 94, 255}
         },
         LessonElement::Square{
             SM.getWidth(squareTwoWidth)+squareOneSize, SM.getHeight(squareOneHeight), 
-            90.0f, squareOneSize, (Color){0, 41, 94, 255}
+            90.0f, squareOneSize, Color{0, 41, 94, 255}
         },
 
 
         LessonElement::Line{
-            (Vector2){SM.getWidth(squareTwoWidth), SM.getHeight(squareOneHeight)},
-            (Vector2){SM.getWidth(squareTwoWidth), SM.getHeight(squareOneHeight) + squareOneSize+90},
+            Vector2{SM.getWidth(squareTwoWidth), SM.getHeight(squareOneHeight)},
+            Vector2{SM.getWidth(squareTwoWidth), SM.getHeight(squareOneHeight) + squareOneSize+90},
             WHITE, 2.0f
         },
         LessonElement::Line{
-            (Vector2){SM.getWidth(squareTwoWidth) + squareOneSize+90, SM.getHeight(squareOneHeight)},
-            (Vector2){SM.getWidth(squareTwoWidth) + squareOneSize+90, SM.getHeight(squareOneHeight) + squareOneSize+90},
+            Vector2{SM.getWidth(squareTwoWidth) + squareOneSize+90, SM.getHeight(squareOneHeight)},
+            Vector2{SM.getWidth(squareTwoWidth) + squareOneSize+90, SM.getHeight(squareOneHeight) + squareOneSize+90},
             WHITE, 2.0f
         },
         LessonElement::Line{
-            (Vector2){SM.getWidth(squareTwoWidth) + squareOneSize, SM.getHeight(squareOneHeight)},
-            (Vector2){SM.getWidth(squareTwoWidth) + squareOneSize, SM.getHeight(squareOneHeight) + squareOneSize+90},
+            Vector2{SM.getWidth(squareTwoWidth) + squareOneSize, SM.getHeight(squareOneHeight)},
+            Vector2{SM.getWidth(squareTwoWidth) + squareOneSize, SM.getHeight(squareOneHeight) + squareOneSize+90},
             WHITE, 2.0f
         },
         LessonElement::Line{
-            (Vector2){SM.getWidth(squareTwoWidth), SM.getHeight(squareOneHeight)},
-            (Vector2){SM.getWidth(squareTwoWidth) + squareOneSize+90, SM.getHeight(squareOneHeight)},
+            Vector2{SM.getWidth(squareTwoWidth), SM.getHeight(squareOneHeight)},
+            Vector2{SM.getWidth(squareTwoWidth) + squareOneSize+90, SM.getHeight(squareOneHeight)},
             WHITE, 2.0f
         },
         LessonElement::Line{
-            (Vector2){SM.getWidth(squareTwoWidth), SM.getHeight(squareOneHeight) + squareOneSize},
-            (Vector2){SM.getWidth(squareTwoWidth) + squareOneSize+90, SM.getHeight(squareOneHeight) + squareOneSize},
+            Vector2{SM.getWidth(squareTwoWidth), SM.getHeight(squareOneHeight) + squareOneSize},
+            Vector2{SM.getWidth(squareTwoWidth) + squareOneSize+90, SM.getHeight(squareOneHeight) + squareOneSize},
             WHITE, 2.0f
         },
         LessonElement::Line{
-            (Vector2){SM.getWidth(squareTwoWidth), SM.getHeight(squareOneHeight) + squareOneSize+90},
-            (Vector2){SM.getWidth(squareTwoWidth) + squareOneSize+90, SM.getHeight(squareOneHeight) + squareOneSize+90},
+            Vector2{SM.getWidth(squareTwoWidth), SM.getHeight(squareOneHeight) + squareOneSize+90},
+            Vector2{SM.getWidth(squareTwoWidth) + squareOneSize+90, SM.getHeight(squareOneHeight) + squareOneSize+90},
             WHITE, 2.0f
         },
 
@@ -382,7 +382,7 @@ void StartScreen::init() {
             "por lo que podemos simplificar x cuadrada \n" 
             "      en todo un binomio al cuadrado. \n \n"
             "Nos queda la siguiente expresion geometrica.",
-            (Vector2){SM.getWidth(squareOneWidth) + squareOneSize + 30.0f, SM.getHeight(squareOneHeight)},
+            Vector2{SM.getWidth(squareOneWidth) + squareOneSize + 30.0f, SM.getHeight(squareOneHeight)},
             textSize, WHITE
         },
 
@@ -393,19 +393,19 @@ void StartScreen::init() {
     lesson->addFrame({
         LessonElement::Text{
             "Leccion: formula general \n tema: ecuaciones de segundo grado",
-            (Vector2){SM.getWidth(3.0f), SM.getHeight(3.0f)},
+            Vector2{SM.getWidth(3.0f), SM.getHeight(3.0f)},
             titleSize, WHITE
         },
         LessonElement::Text{
             "       CUESTIONARIO \n"
             "que falta para completar el \n"
             "    binomio al cuadrado?",
-            (Vector2){SM.getWidth(35.0f), SM.getHeight(20.0f)},
+            Vector2{SM.getWidth(35.0f), SM.getHeight(20.0f)},
             30.0f, WHITE
         },
         LessonElement::Text{
             this->ansewerOne,
-            (Vector2){SM.getWidth(30.0f), SM.getHeight(90.0f)},
+            Vector2{SM.getWidth(30.0f), SM.getHeight(90.0f)},
             titleSize, WHITE
         },
 
@@ -421,7 +421,7 @@ void StartScreen::init() {
     lesson->addFrame({
         LessonElement::Text{
             "Leccion: formula general \n ecuaciones de segundo grado",
-            (Vector2){SM.getWidth(0.0f), SM.getHeight(0.0f)},
+            Vector2{SM.getWidth(0.0f), SM.getHeight(0.0f)},
             titleSize, WHITE
         },
         LessonElement::Image{
@@ -432,52 +432,52 @@ void StartScreen::init() {
         LessonElement::Text{
             "Nota: recordemos la forma general del \n"
             "binomio al cuadrado.",
-            (Vector2){SM.getWidth(70.0f), SM.getHeight(10.0f)},
+            Vector2{SM.getWidth(70.0f), SM.getHeight(10.0f)},
             textSize, WHITE
         },
 
         LessonElement::Square{
             SM.getWidth(squareTwoWidth), SM.getHeight(squareOneHeight), 
-            squareOneSize, squareOneSize, (Color){145, 0, 0, 255}
+            squareOneSize, squareOneSize, Color{145, 0, 0, 255}
         },
         LessonElement::Square{
             SM.getWidth(squareTwoWidth), SM.getHeight(squareOneHeight)+squareOneSize, 
-            squareOneSize, 90.0f, (Color){0, 41, 94, 255}
+            squareOneSize, 90.0f, Color{0, 41, 94, 255}
         },
         LessonElement::Square{
             SM.getWidth(squareTwoWidth)+squareOneSize, SM.getHeight(squareOneHeight), 
-            90.0f, squareOneSize, (Color){0, 41, 94, 255}
+            90.0f, squareOneSize, Color{0, 41, 94, 255}
         },
 
 
         LessonElement::Line{
-            (Vector2){SM.getWidth(squareTwoWidth), SM.getHeight(squareOneHeight)},
-            (Vector2){SM.getWidth(squareTwoWidth), SM.getHeight(squareOneHeight) + squareOneSize+90},
+            Vector2{SM.getWidth(squareTwoWidth), SM.getHeight(squareOneHeight)},
+            Vector2{SM.getWidth(squareTwoWidth), SM.getHeight(squareOneHeight) + squareOneSize+90},
             WHITE, 2.0f
         },
         LessonElement::Line{
-            (Vector2){SM.getWidth(squareTwoWidth) + squareOneSize+90, SM.getHeight(squareOneHeight)},
-            (Vector2){SM.getWidth(squareTwoWidth) + squareOneSize+90, SM.getHeight(squareOneHeight) + squareOneSize+90},
+            Vector2{SM.getWidth(squareTwoWidth) + squareOneSize+90, SM.getHeight(squareOneHeight)},
+            Vector2{SM.getWidth(squareTwoWidth) + squareOneSize+90, SM.getHeight(squareOneHeight) + squareOneSize+90},
             WHITE, 2.0f
         },
         LessonElement::Line{
-            (Vector2){SM.getWidth(squareTwoWidth) + squareOneSize, SM.getHeight(squareOneHeight)},
-            (Vector2){SM.getWidth(squareTwoWidth) + squareOneSize, SM.getHeight(squareOneHeight) + squareOneSize+90},
+            Vector2{SM.getWidth(squareTwoWidth) + squareOneSize, SM.getHeight(squareOneHeight)},
+            Vector2{SM.getWidth(squareTwoWidth) + squareOneSize, SM.getHeight(squareOneHeight) + squareOneSize+90},
             WHITE, 2.0f
         },
         LessonElement::Line{
-            (Vector2){SM.getWidth(squareTwoWidth), SM.getHeight(squareOneHeight)},
-            (Vector2){SM.getWidth(squareTwoWidth) + squareOneSize+90, SM.getHeight(squareOneHeight)},
+            Vector2{SM.getWidth(squareTwoWidth), SM.getHeight(squareOneHeight)},
+            Vector2{SM.getWidth(squareTwoWidth) + squareOneSize+90, SM.getHeight(squareOneHeight)},
             WHITE, 2.0f
         },
         LessonElement::Line{
-            (Vector2){SM.getWidth(squareTwoWidth), SM.getHeight(squareOneHeight) + squareOneSize},
-            (Vector2){SM.getWidth(squareTwoWidth) + squareOneSize+90, SM.getHeight(squareOneHeight) + squareOneSize},
+            Vector2{SM.getWidth(squareTwoWidth), SM.getHeight(squareOneHeight) + squareOneSize},
+            Vector2{SM.getWidth(squareTwoWidth) + squareOneSize+90, SM.getHeight(squareOneHeight) + squareOneSize},
             WHITE, 2.0f
         },
         LessonElement::Line{
-            (Vector2){SM.getWidth(squareTwoWidth), SM.getHeight(squareOneHeight) + squareOneSize+90},
-            (Vector2){SM.getWidth(squareTwoWidth) + squareOneSize+90, SM.getHeight(squareOneHeight) + squareOneSize+90},
+            Vector2{SM.getWidth(squareTwoWidth), SM.getHeight(squareOneHeight) + squareOneSize+90},
+            Vector2{SM.getWidth(squareTwoWidth) + squareOneSize+90, SM.getHeight(squareOneHeight) + squareOneSize+90},
             WHITE, 2.0f
         },
 
@@ -561,7 +561,7 @@ void StartScreen::init() {
     lesson->addFrame({
         LessonElement::Text{
             "Leccion: formula general \n ecuaciones de segundo grado",
-            (Vector2){SM.getWidth(0.0f), SM.getHeight(0.0f)},
+            Vector2{SM.getWidth(0.0f), SM.getHeight(0.0f)},
             titleSize, WHITE
         },
         LessonElement::Image{
@@ -576,7 +576,7 @@ void StartScreen::init() {
         },
         LessonElement::Text{
             "Desarrollamos la resta de las dos fracciones",
-            (Vector2){SM.getWidth(55.0f), SM.getHeight(10.0f)},
+            Vector2{SM.getWidth(55.0f), SM.getHeight(10.0f)},
             textSize, WHITE
         },
         LessonElement::Image{
@@ -593,7 +593,7 @@ void StartScreen::init() {
             "simplificamos el binomio al sacarle raiz cuadrada, \n"
             "por lo que nos queda un lado del binomio, \n"
             "o lo que es lo mismo, la raiz cuadrada",
-            (Vector2){SM.getWidth(55.0f), SM.getHeight(40.0f)},
+            Vector2{SM.getWidth(55.0f), SM.getHeight(40.0f)},
             textSize, WHITE
         },
         LessonElement::Image{
@@ -609,7 +609,7 @@ void StartScreen::init() {
         LessonElement::Text{
             "desarrollamos el cuadrado \n"
             "de b entre 2a al cuadrado",
-            (Vector2){SM.getWidth(55.0f), SM.getHeight(70.0f)},
+            Vector2{SM.getWidth(55.0f), SM.getHeight(70.0f)},
             textSize, WHITE
         },
 
@@ -620,7 +620,7 @@ void StartScreen::init() {
     lesson->addFrame({
         LessonElement::Text{
             "Leccion: formula general \n ecuaciones de segundo grado",
-            (Vector2){SM.getWidth(0.0f), SM.getHeight(0.0f)},
+            Vector2{SM.getWidth(0.0f), SM.getHeight(0.0f)},
             titleSize, WHITE
         },
         LessonElement::Image{
@@ -636,7 +636,7 @@ void StartScreen::init() {
         LessonElement::Text{
             "Desarrollamos la resta de las dos fracciones\n"
             "manteniendo la igualdad",
-            (Vector2){SM.getWidth(55.0f), SM.getHeight(10.0f)},
+            Vector2{SM.getWidth(55.0f), SM.getHeight(10.0f)},
             textSize, WHITE
         },
         LessonElement::Image{
@@ -652,7 +652,7 @@ void StartScreen::init() {
         LessonElement::Text{
             "sacamos raiz cuadrada a 4a cuadrada, por lo que nos \n"
             "queda 2a y dejamos raiz cuadrada en el numerador",
-            (Vector2){SM.getWidth(55.0f), SM.getHeight(40.0f)},
+            Vector2{SM.getWidth(55.0f), SM.getHeight(40.0f)},
             textSize, WHITE
         },
         LessonElement::Image{
@@ -668,7 +668,7 @@ void StartScreen::init() {
         LessonElement::Text{
             "Pasamos la expresion b entre 2a para el otro lado de la \n"
             "igualdad, por lo que dejamos totalmente despejada X!!",
-            (Vector2){SM.getWidth(55.0f), SM.getHeight(70.0f)},
+            Vector2{SM.getWidth(55.0f), SM.getHeight(70.0f)},
             textSize, WHITE
         },
 
@@ -679,7 +679,7 @@ void StartScreen::init() {
     lesson->addFrame({
         LessonElement::Text{
             "Leccion: formula general \n ecuaciones de segundo grado",
-            (Vector2){SM.getWidth(0.0f), SM.getHeight(0.0f)},
+            Vector2{SM.getWidth(0.0f), SM.getHeight(0.0f)},
             titleSize, WHITE
         },
         LessonElement::Image{
@@ -692,7 +692,7 @@ void StartScreen::init() {
             " lo que la famosa Fomula general!, asi que ahora \n"
             " entendemos porque al usar esta curiosa formula \n"
             "podemos sacar los dos valores de x automaticamente",
-            (Vector2){SM.getWidth(25.0f), SM.getHeight(40.0f)},
+            Vector2{SM.getWidth(25.0f), SM.getHeight(40.0f)},
             titleSize, WHITE
         },
 

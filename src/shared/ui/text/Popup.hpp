@@ -28,7 +28,7 @@ public:
         ScreenManager::Instance().getHeight(90.0f),
         300.0f,
         30.0f
-    }), color((Color){50, 50, 50, 128}) {} 
+    }), color(Color{50, 50, 50, 128}) {} 
     
     void send(float duration) {
         active = true;

@@ -65,7 +65,7 @@ public:
                 DrawTextEx(
                     element.fontType,
                     element.text.c_str(),
-                    (Vector2){element.position.x, element.position.y},
+                    Vector2{element.position.x, element.position.y},
                     element.fontSize,
                     2.0f,
                     element.color
@@ -96,14 +96,14 @@ public:
             } else if constexpr (std::is_same_v<T, LessonElement::Image>) {
                 DrawTextureEx(
                     element.txt,
-                    (Vector2){(element.x), (element.y)},
+                    Vector2{(element.x), (element.y)},
                     element.rotation,
                     element.scale,
                     element.color
                 );
             } else if constexpr (std::is_same_v<T, LessonElement::SquareLines>) {
                 DrawRectangleLinesEx(
-                    (Rectangle){element.x, element.y, element.width, element.height},
+                    Rectangle{element.x, element.y, element.width, element.height},
                     element.thickness,
                     element.color
                 );

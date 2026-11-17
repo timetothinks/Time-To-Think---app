@@ -13,7 +13,7 @@
 void MainMenuScreen::init() {
     demoTest = new Button(
         0, 0, 400, 70, 
-        "Prueba la DEMO!!", (Color){56, 189, 248, 255}, 
+        "Prueba la DEMO!!", Color{56, 189, 248, 255}, 
     [this]() {
         SM.changeScreen("start");
     }, 24.0f, SM.getFontJetbrains());
@@ -23,7 +23,7 @@ void MainMenuScreen::init() {
     };
 
     auto colorGradient = [sendRGB](Color color, int degradation) -> Color {
-        return (Color){
+        return Color{
             sendRGB(color.r-degradation), 
             sendRGB(color.g-degradation),
             sendRGB(color.b-degradation),
@@ -32,7 +32,7 @@ void MainMenuScreen::init() {
 
     // MAIN MENU BUTTONS
 
-    Color menuColor = (Color){200, 230, 230, 255};
+    Color menuColor = Color{200, 230, 230, 255};
     Color menuColorRigth = colorGradient((menuColor), 20);
 
     sciencesMenu = new AnimatedMenu(
@@ -378,14 +378,14 @@ void MainMenuScreen::DrawBackgroundTexture(
 }
 
 void MainMenuScreen::draw() {
-    ClearBackground((Color){11, 20, 36, 255});
+    ClearBackground(Color{11, 20, 36, 255});
 
     DrawRectangleGradientV(
         static_cast<int>(SM.getWidth(0.0f)),
         static_cast<int>(SM.getHeight(100.0f) - 100.0f),
         static_cast<int>(SM.getWidth(100.0f)),
         100,
-        (Color){11, 20, 36, 255},
+        Color{11, 20, 36, 255},
         BLACK
     );
     DrawRectangleGradientV(
@@ -393,32 +393,32 @@ void MainMenuScreen::draw() {
         static_cast<int>(SM.getWidth(100.0f)),
         200,
         BLACK,
-        (Color){11, 20, 36, 255}
+        Color{11, 20, 36, 255}
         ); 
 	DrawTextEx(
         SM.getFontRegular(), "Time To Think",
-        (Vector2){50.0f, 25.0f}, 96.0f, 4.0f, RAYWHITE
+        Vector2{50.0f, 25.0f}, 96.0f, 4.0f, RAYWHITE
     );
     DrawBackgroundTexture("sigma_maths", 80.0f, 30.0f, 14.0f, 20.0f, 0.0f, GOLD);
     DrawBackgroundTexture("math_circle", 74.1f, 40.4f, 12.0f, 12.0f, 25.0f, DARKBLUE);
     DrawBackgroundTexture("ball_graphic", 80.0f, 60.4f, 15.0f, 12.0f, 0.0f, LIME);
     DrawBackgroundTexture("math_graphic", 70.0f, 30.0f, 14.0f, 14.0f, 0.0f, SKYBLUE);
 
-    DrawBackgroundTexture("cube", 42.0f, 25.0f, 24.0f, 24.0f, 0.0f,(Color){0, 160, 45, 255}, 0.12f);
+    DrawBackgroundTexture("cube", 42.0f, 25.0f, 24.0f, 24.0f, 0.0f,Color{0, 160, 45, 255}, 0.12f);
     DrawBackgroundTexture("compass", 34.0f, 35.0f, 12.0f, 12.0f, 0.0f, MAGENTA, 0.07);
 
     DrawBackgroundTexture("brain", 51.0f, 60.0f, 24.0f, 24.0f, 0.0f, RED, 0.12f);
-    DrawBackgroundTexture("idea", 55.4f, 47.0f, 15.0f, 15.0f, 0.0f, (Color){173, 183, 0, 255});
+    DrawBackgroundTexture("idea", 55.4f, 47.0f, 15.0f, 15.0f, 0.0f, Color{173, 183, 0, 255});
     DrawBackgroundTexture("adn", 44.0f, 56.0f, 12.0f, 16.0f, 30.0f, PURPLE);
     DrawBackgroundTexture("think_men", 75.0f, 73.0f, 12.0f, 12.0f, 25.0f, BEIGE);
 
-    DrawBackgroundTexture("bg_molecular", 5.0f, 45.0f, 30.0f, 30.0f, 0.0f, (Color){0, 117, 240, 255}, 0.12f);
-    DrawBackgroundTexture("chemical_bottle", 8.0f, 35.0f, 12.0f, 12.0f, -10.0f, (Color){170, 16, 192, 255});
+    DrawBackgroundTexture("bg_molecular", 5.0f, 45.0f, 30.0f, 30.0f, 0.0f, Color{0, 117, 240, 255}, 0.12f);
+    DrawBackgroundTexture("chemical_bottle", 8.0f, 35.0f, 12.0f, 12.0f, -10.0f, Color{170, 16, 192, 255});
     DrawBackgroundTexture("chemical_form", 33.0f, 40.0f, 12.0f, 12.0f, 40.0f, MAROON);
 
     DrawTextEx(SM.getFontJetbrains(), 
     "Creado por\n- Gomez Parra Salvador Rafael \n- Sepulveda Naranjo Roberto Josue",
-    (Vector2){370.0f, (SM.getHeight(85.0f))}, 
+    Vector2{370.0f, (SM.getHeight(85.0f))}, 
     16.0f, 2.0f, Fade(GRAY, 0.5f)
     );
 

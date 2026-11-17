@@ -113,7 +113,7 @@ public:
             DrawTextEx(
                 ScreenManager::Instance().getFontJetbrains(),
                 title.c_str(),
-                (Vector2){bounds.x + 20.0f, bounds.y - buttonHeight + 10.0f}, 
+                Vector2{bounds.x + 20.0f, bounds.y - buttonHeight + 10.0f}, 
                 24.0f, 2.0f, BLACK
             );
             Icons::drawIcon(

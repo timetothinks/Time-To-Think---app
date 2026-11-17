@@ -26,7 +26,7 @@ void IntroScreen::init() {
 void IntroScreen::resizeScreen() {}
 
 void IntroScreen::draw() {  
-    ClearBackground((Color){backgroundR, backgroundG, backgroundB, 255});
+    ClearBackground(Color{backgroundR, backgroundG, backgroundB, 255});
 
     float height = GetScreenHeight();
     float width = GetScreenWidth();

@@ -1,10 +1,7 @@
 #ifndef INTRO_SCREEN
 #define INTRO_SCREEN
 
-#include <vector>
-
 #include "screens/ScreenTemplate.hpp"
-#include "shared/ui/Ui.hpp"
 
 class Button;
 
