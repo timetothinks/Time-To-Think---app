@@ -1,0 +1,33 @@
+name: Build Windows
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar CMake
+        run: cmake -S . -B build -A x64 -DCMAKE_BUILD_TYPE=Release
+
+      - name: Compilar proyecto
+        run: cmake --build build --config Release --parallel
+
+      - name: Instalar aplicación
+        run: cmake --install build --config Release --prefix dist/windows
+
+      - name: Crear ZIP
+        run: |
+          Compress-Archive -Path dist/windows/* -DestinationPath TimeToThink-Windows-x86_64.zip
+
+      - name: Guardar ejecutable
+        uses: actions/upload-artifact@v4
+        with:
+          name: TimeToThink-Windows-x86_64
+          path: TimeToThink-Windows-x86_64.zip
